@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Inline+Text:wght@900&family=Goldman&family=Roboto:wght@300&display=swap"
+        rel="stylesheet">
+    <style>
+        h1 {
+            font-size: 80px;
+            color: brown;
+            font-family: 'Big Shoulders Inline Text', cursive;
+            text-align: center;
+        }
+
+        h2 {
+            font-family: 'Goldman', cursive;
+            color: coral;
+            font-size: 25px;
+            padding-left: 90px;
+        }
+
+        p,ul {
+            font-family: 'Roboto', sans-serif;
+            font-size: 20px;
+            padding-left: 150px;
+            list-style: none;
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <h1>House list</h1><br><br><br>
+    <div class="details">
+        <h2>Number of House: </h2> <p id = "count"></p>
+    </div>
+    <h2>1st house</h2>
+    <ul>
+        <li id = "house1"></li>
+        <li id = "address1"></li>
+    </ul>
+   
+    <script>
+        var parser, xmlDoc;
+        var text = "<RentList><task id = '1'> <Listno>House No 1</Listno> <Rentaladdress>Rental Address - 123, Onetwothree street, Madurai</Rentaladdress> </RentList>";
+
+        parser = new DOMParser();
+        xmlDoc = parser.parseFromString(text, "text/xml");
+        
+        document.getElementById("count").innerHTML =
+            xmlDoc.getElementsByTagName("RentList")[0].childElementCount;
+        
+        document.getElementById("address1").innerHTML =
+            xmlDoc.getElementsByTagName("Rentaladdress")[0].childNodes[0].nodeValue;
+        document.getElementById("house1").innerHTML =
+            xmlDoc.getElementsByTagName("Listno")[0].childNodes[0].nodeValue;
+    </script>
+
+</body>
+
+</html>

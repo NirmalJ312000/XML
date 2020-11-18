@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Inline+Text:wght@900&family=Goldman&family=Roboto:wght@300&display=swap"
+        rel="stylesheet">
+    <style>
+        h1 {
+            font-size: 80px;
+            color: brown;
+            font-family: 'Big Shoulders Inline Text', cursive;
+            text-align: center;
+        }
+
+        h2 {
+            font-family: 'Goldman', cursive;
+            color: coral;
+            font-size: 45px;
+            padding-left: 90px;
+        }
+
+        ul {
+            font-family: 'Roboto', sans-serif;
+            font-size: 20px;
+            padding-left: 150px;
+            list-style: none;
+        }
+
+        .container {
+            margin-left: 0px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>House list</h1><br><br><br>
+    <h2>House1</h2>
+    <ul id="house1"></ul>
+    <div class="container">
+        <h2>House2</h2>
+        <ul id="house2"></ul>
+    </div>
+
+    <script>
+        var text = '{"rental": [' +
+            '{ "@id": "1", "Listno": "House No 1", "Rentaladdress": "Rental Address - 123, Onetwothree street, Madurai", "Housesize": "House Size - 2BHK", "Rent": "Rent - 12000"},' +
+            '{ "@id": "1", "Listno": "House No 2", "Rentaladdress": "Rental Address - 456, Fourfivesix street, Madurai", "Housesize": "House Size - 3BHK", "Rent": "Rent - 15000"}]}';
+
+        obj = JSON.parse(text);
+        document.getElementById("house1").innerHTML = "<li>" +
+            obj.rental[0].Listno + " - " + obj.rental[0].Rentaladdress + "</li> <br><li>" +
+            obj.rental[0].Housesize + "&nbsp;&nbsp;&nbsp;&nbsp; " + obj.rental[0].Rent + " &nbsp;&nbsp;&nbsp;&nbsp; ";
+	document.getElementById("house2").innerHTML = "<li>" +
+            obj.rental[1].Listno + " - " + obj.rental[1].Rentaladdress + "</li> <br><li>" +
+            obj.rental[1].Housesize + "&nbsp;&nbsp;&nbsp;&nbsp; " + obj.rental[1].Rent + " &nbsp;&nbsp;&nbsp;&nbsp; ";
+    </script>
+
+</body>
+
+</html>

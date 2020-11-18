@@ -1,0 +1,29 @@
+<?xml encoding="UTF-8"?>
+
+<!ELEMENT HouseRentList (comp1,comp2)>
+<!ATTLIST HouseRentList
+  xmlns CDATA #FIXED ''>
+
+<!ELEMENT comp1 (Listno,Rentaladdress,Housesize,Rent)>
+<!ATTLIST comp1
+  xmlns CDATA #FIXED ''>
+
+<!ELEMENT comp2 (Listno,Rentaladdress,Housesize,Rent)>
+<!ATTLIST comp2
+  xmlns CDATA #FIXED ''>
+
+<!ELEMENT Listno (#PCDATA)>
+<!ATTLIST Listno
+  xmlns CDATA #FIXED ''>
+
+<!ELEMENT Rentaladdress (#PCDATA)>
+<!ATTLIST Rentaladdress
+  xmlns CDATA #FIXED ''>
+
+<!ELEMENT Housesize (#PCDATA)>
+<!ATTLIST Housesize
+  xmlns CDATA #FIXED ''>
+
+<!ELEMENT Rent (#PCDATA)>
+<!ATTLIST Rent
+  xmlns CDATA #FIXED ''>

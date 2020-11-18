@@ -1,0 +1,21 @@
+<?xml encoding="UTF-8"?>
+
+<!ELEMENT Ownerdetails (detail1,detail2)>
+<!ATTLIST Ownerdetails
+  xmlns CDATA #FIXED ''>
+
+<!ELEMENT detail1 (Ownername,Contactno)>
+<!ATTLIST detail1
+  xmlns CDATA #FIXED ''>
+
+<!ELEMENT detail2 (Ownername,Contactno)>
+<!ATTLIST detail2
+  xmlns CDATA #FIXED ''>
+
+<!ELEMENT Ownername (#PCDATA)>
+<!ATTLIST Ownername
+  xmlns CDATA #FIXED ''>
+
+<!ELEMENT Contactno (#PCDATA)>
+<!ATTLIST Contactno
+  xmlns CDATA #FIXED ''>

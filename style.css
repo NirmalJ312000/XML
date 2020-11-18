@@ -1,0 +1,80 @@
+
+rent2{
+    padding-top: 60px;
+    padding-left: 10px;
+    position: relative;
+    display: block;
+}
+
+rent1 Listno{
+    color: blue;
+    position: relative;
+    display: block;
+    font-family: Conthrax SemiBold;
+    font-size: 35px;
+}
+
+rent1 Rentaladdress, Housesize, Rent{
+    color:brown;
+    font-family: Rebrush Regular;
+    font-size: 20px;
+    padding-left: 25px;
+}
+
+
+rent2 Listno{
+    color: blue;
+    position: relative;
+    display: block;
+    font-family: Conthrax SemiBold;
+    font-size: 35px;
+}
+
+rent2 Rentaladdress, Housesize, Rent{
+    color:brown;
+    font-family: Rebrush Regular;
+    font-size: 20px;
+    padding-left: 25px;
+}
+
+own1{
+    padding-top: 60px;
+    padding-left: 10px;
+    position: relative;
+    display: block;
+}
+own2{
+    padding-top: 60px;
+    padding-left: 10px;
+    position: relative;
+    display: block;
+}
+
+own1 Ownername{
+    color: blue;
+    position: relative;
+    display: block;
+    font-family: Conthrax SemiBold;
+    font-size: 35px;
+}
+
+own1 Contactno{
+    color:brown;
+    font-family: Rebrush Regular;
+	font-size: 25px;
+    padding-left: 25px;
+}
+own2 Ownername{
+    color: blue;
+    position: relative;
+    display: block;
+    font-family: Conthrax SemiBold;
+    font-size: 35px;
+}
+
+own2 Contactno{
+    color:brown;
+    font-family: Rebrush Regular;
+    font-size: 25px;
+    padding-left: 25px;
+}

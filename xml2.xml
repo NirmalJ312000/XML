@@ -1,0 +1,18 @@
+<?xml version = "1.0" encoding = "UTF-8" standalone = "no" ?>
+
+<?xml-stylesheet type="text/css" href="style.css"?> 
+<Ownerdetails>
+    <own1>
+	
+        <Ownername>Owner Name - Nirmal</Ownername>
+		<Contactno>Contact No - 1234567890</Contactno>
+		
+    </own1>
+	
+    <own2>
+        <Ownername>Owner Name - Saron</Ownername>
+		<Contactno>Contact No - 0987654321</Contactno>
+		
+    </own2>
+   
+</Ownerdetails>

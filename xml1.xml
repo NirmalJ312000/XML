@@ -1,0 +1,20 @@
+<?xml version = "1.0" encoding = "UTF-8" standalone = "no" ?>
+
+<?xml-stylesheet type="text/css" href="style.css"?> 
+<HouseRentList>
+    <rent1>
+		<Listno>House No 1</Listno>
+        <Rentaladdress>Rental Address - 123, Onetwothree street, Madurai</Rentaladdress>
+		<Housesize>House Size - 2BHK</Housesize> 
+		<Rent>Rent - 12000</Rent>		
+		
+    </rent1>
+    <rent2>
+		<Listno>House No 2</Listno>
+		<Rentaladdress>Rental Address - 456, Fourfivesix street, Madurai</Rentaladdress>
+		<Housesize>House Size - 3BHK</Housesize> 
+		<Rent>Rent - 15000</Rent>
+		
+    </rent2>
+</HouseRentList>
+

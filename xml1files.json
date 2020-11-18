@@ -1,0 +1,14 @@
+{
+   "comp1": {
+      "Listno": "House No 1",
+      "Rentaladdress": "Rental Address - 123, Onetwothree street, Madurai",
+      "Housesize": "House Size - 2BHK",
+      "Rent": "Rent - 12000"
+   },
+   "comp2": {
+      "Listno": "House No 2",
+      "Rentaladdress": "Rental Address - 456, Fourfivesix street, Madurai",
+      "Housesize": "House Size - 3BHK",
+      "Rent": "Rent - 15000"
+   }
+}
